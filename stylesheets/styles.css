@@ -1,0 +1,129 @@
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+.btn button {
+  background-color: #32735d;
+  border-radius: 10px;
+  border: none;
+  color: white;
+
+  padding: 12px 40px;
+  margin: 70px 0 60px;
+
+  font-size: 1.5rem;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+  text-shadow: 3px 0 #232931;
+}
+
+/* Table */
+#tableTitle {
+  font-family: 'Indie Flower', cursive;
+  font-size: 4rem;
+  font-weight: 900;
+  margin: 0px;
+  color: #EEEEEE;
+  text-shadow: 7px 0 #232931;
+}
+
+#scoreboard {
+  margin: 40px auto;
+
+  border-collapse: collapse;
+  border-style:hidden;
+
+  width: 600px;
+  height: 300px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+thead {
+  background-color: #589680;
+}
+
+thead, tr {
+  margin: 50%;
+
+  border-style: 2px double;
+  border-color: white;
+
+  height: 50px;
+  
+  color: white;
+  
+  font-family: 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+tr:nth-child(even) {
+  background-color: #232931;
+}
+
+/* Default Styles */
+body {
+  background-color: #393E46;
+  user-select: none;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lobster', cursive;
+  text-shadow: 10px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  color: #4ECCA3;
+  text-shadow: 4px 0 #232931;
+  font-size: 3rem;
+  font-family: 'Indie Flower', cursive;
+  font-weight: 900;
+}
+
+img {
+  width: 80%;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+/* Effects */
+.btn button:hover {
+  background-color: #2b604d;
+}
+
+.btn button:active {
+  animation: clickEffect 0.05s;
+}
+
+@keyframes clickEffect {
+  from {
+    padding: 12px 50px;
+    margin: 70px 0 60px;
+    font-size: 1.5rem;
+  }
+
+  to {
+    padding: 15px 60px;
+    margin: 61.5px;
+    font-size: 1.55rem;
+  }
+}
