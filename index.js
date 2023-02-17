@@ -30,14 +30,17 @@ button.addEventListener("click", () => {
                     tableRow[counter].lastElementChild.textContent = "✅";
                     player1Wins+=1;
                     player2Wins+=1;
+
                 } else if (randomNumber1 > randomNumber2) {
                     tableRow[counter].firstElementChild.innerHTML = "✅";
                     tableRow[counter].lastElementChild.innerHTML = "☠️";
                     player1Wins++;
+
                 } else {
                     tableRow[counter].firstElementChild.innerHTML = "☠️";
                     tableRow[counter].lastElementChild.innerHTML = "✅";
                     player2Wins++;
+
                 }
             
             }
@@ -57,8 +60,10 @@ button.addEventListener("click", () => {
         leftDice.setAttribute("src", images[5]);
         rightDice.setAttribute("src", images[5]);
         counter = 0;
+        clearCounter = 0;
         player1Wins = 0;
         player2Wins = 0;
+        title.innerHTML = "Click the Button!";
         button.textContent = "Press Me!";
 
         while (clearCounter < 10) {
