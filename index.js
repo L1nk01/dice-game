@@ -23,7 +23,7 @@ button.addEventListener("click", () => {
 
         if (counter <= 5) {
 
-           for (i = 0; i < tableRow.length; i++) {
+           for (let i = 0; i < tableRow.length; i++) {
 
                 if (randomNumber1 === randomNumber2) {
                     tableRow[counter].firstElementChild.textContent = "✅";
