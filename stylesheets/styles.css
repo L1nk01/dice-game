@@ -75,6 +75,7 @@ tr:nth-child(even) {
 body {
   background-color: #393E46;
   user-select: none;
+  margin: 0;
 }
 
 h1 {
@@ -102,28 +103,33 @@ footer {
   color: #EEEEEE;
   text-align: center;
   font-family: 'Indie Flower', cursive;
-
+  font-size: 1.2rem;
+  background-color:#232931;
+  margin: 0;
+  padding: 70px 0;
 }
 
 /* Effects */
-.btn button:hover {
-  background-color: #2b604d;
-}
-
-.btn button:active {
-  animation: clickEffect 0.05s;
-}
-
-@keyframes clickEffect {
-  from {
-    padding: 12px 50px;
-    margin: 70px 0 60px;
-    font-size: 1.5rem;
+@media (min-width: 1024px) {
+  .btn button:hover {
+    background-color: #2b604d;
   }
 
-  to {
-    padding: 15px 60px;
-    margin: 61.5px;
-    font-size: 1.55rem;
+  .btn button:active {
+    animation: clickEffect 0.10s;
+  }
+
+  @keyframes clickEffect {
+    from {
+      padding: 12px 40px;
+      margin: 70px 0 60px;
+      font-size: 1.5rem;
+    }
+
+    to {
+      padding: 17px 50px;
+      margin: 59px;
+      font-size: 1.60rem;
+    }
   }
 }
