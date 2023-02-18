@@ -75,6 +75,10 @@ tr:nth-child(even) {
 body {
   background-color: #393E46;
   user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
   margin: 0;
 }
 
